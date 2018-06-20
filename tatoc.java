@@ -62,6 +62,7 @@ String str=token_value.substring(token_value.indexOf(":")+2);
 Cookie cookie = new Cookie("Token",str);
 driver.manage().addCookie(cookie);
 driver.findElement(By.linkText("Proceed")).click();
+driver.close();
 
 }
  
